@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Pietro de Souza Mastantuono</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1c1c1c;
+            color: #e0e0e0;
+            background-image: url('fundo_portifolio.png'); 
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        header, footer {
+            background: linear-gradient(to bottom, rgba(255, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        footer {
+            background: linear-gradient(to top, rgba(255, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        nav button {
+            background-color: rgba(255, 0, 0, 0.6);
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        nav button:hover {
+            background-color: rgba(178, 0, 0, 0.8);
+        }
+        .pagina {
+            display: none;
+            margin: 2rem auto;
+            width: 90%;
+            max-width: 800px;
+            background: rgba(28, 28, 28, 0.9);
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 1.5rem;
+        }
+        .pagina img {
+            width: 100%;
+            height: auto;
+            margin: 1rem 0;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfólio de Pietro de Souza Mastantuono</h1>
+    </header>
+    <nav>
+        <button onclick="mostrarPagina('bemVindo')">Bem-vindo</button>
+        <button onclick="mostrarPagina('projeto1')">Projeto 1</button>
+        <button onclick="mostrarPagina('projeto2')">Projeto 2</button>
+        <button onclick="mostrarPagina('projeto3')">Projeto 3</button>
+        <button onclick="mostrarPagina('projeto4')">Projeto 4</button>
+        <button onclick="mostrarPagina('projeto5')">Projeto 5</button>
+        <button onclick="mostrarPagina('projeto6')">Projeto 6</button>
+        <button onclick="mostrarPagina('projeto7')">Projeto 7</button>
+        <button onclick="mostrarPagina('projeto8')">Projeto 8</button>
+        <button onclick="mostrarPagina('projeto9')">Projeto 9</button>
+        <button onclick="mostrarPagina('projeto10')">Projeto 10</button>
+        <button onclick="mostrarPagina('projeto11')">Projeto 11</button>
+        <button onclick="mostrarPagina('poliweek')">Poliweek</button>
+        <button onclick="mostrarPagina('contato')">Contato</button>
+    </nav>
+    <div id="bemVindo" class="pagina" style="display: block;">
+        <h2>Bem-vindo</h2>
+        <p>Olá! Bem-vindo ao portfólio de Pietro de Souza Mastantuono. Aqui você encontrará informações sobre os projetos realizados por mim durante o primeiro período de Ciência da Computação.</p>
+        <p>Sinta-se à vontade para explorar e ver a realização de meus projetos, seminários e pesquisas.</p>
+    </div>
+    <div id="poliweek" class="pagina">
+        <h2>Poliweek</h2>
+        <img src="POLIWEEK_2024_Dec_Estudante.png" alt="POLIWEEK 2024 Dec Estudante">
+        <p>A Poliweek foi um evento de intensa descoberta sobre as áreas do meu curso e seus possíveis ramos dentro da área.</p>
+    </div>
+    <div id="contato" class="pagina">
+        <h2>Contato</h2>
+        <p>Entre em contato comigo pelos seguintes meios:</p>
+        <p><strong>Telefone:</strong> (41) 9 8703-8313</p>
+        <p><strong>E-mail:</strong> pimastan1@hotmail.com</p>
+    </div>
+
+    <script>
+        const totalProjetos = 11;
+        const imagensProjetos = [
+            "jogo_portifolio.png",
+            "quiz_portifolio.png",
+            "html_quiz_portifolio.png",
+            "arquitetura_portifolio.png",
+            "chipset_portifolio.png",
+            "operacional_portifolio.png",
+            "wokwi_portifolio.png",
+            "jokempo_portifolio.png",
+            "maquina_portifolio.png",
+            "detetive_portifolio.png",
+            "byung-chung-han_portifolio.png"
+        ];
+
+        const descricoesProjetos = [
+            "Desenvolvi um jogo simples, onde pude aplicar conhecimentos de lógica de programação e estruturas condicionais. Esse projeto foi importante para consolidar as bases do desenvolvimento de aplicações interativas.",
+            "Criação de um sistema de perguntas e respostas (quiz), com pontuação e feedback interativo, utilizando HTML, CSS e JavaScript.",
+            "Desenvolvi uma aplicação interativa em HTML que explora a criação de formulários, manipulação de eventos e organização de conteúdos.",
+            "Este projeto focou na análise e implementação de uma arquitetura computacional, explorando conceitos como CPU, memória e barramentos.",
+            "Realizei um estudo detalhado sobre chipsets, explorando suas funções dentro de placas-mãe e sua importância para o desempenho dos sistemas.",
+            "Desenvolvimento de um sistema operacional básico, abordando conceitos de gerenciamento de processos, memória e armazenamento.",
+            "Simulação de circuitos elétricos utilizando a plataforma Wokwi. Esse projeto enfatizou a conexão entre software e hardware.",
+            "Implementação do jogo Jokempo (Pedra, Papel e Tesoura), utilizando lógica de programação e interface interativa.",
+            "Simulação de uma máquina de refirgerante usando o python e implementando isso em seu sistema",
+            "Desenvolvimento de um jogo estilo detetive, que envolve lógica, dedução e narrativa interativa.",
+            "Seminário e pesquisa sobre o autor Byung-Chul Han, explorando suas obras e conceitos filosóficos."
+        ];
+
+        for (let i = 1; i <= totalProjetos; i++) {
+            document.body.innerHTML += `
+                <div id="projeto${i}" class="pagina">
+                    <h2>Projeto ${i}</h2>
+                    <img src="${imagensProjetos[i - 1]}" alt="Imagem do Projeto ${i}">
+                    <p>${descricoesProjetos[i - 1]}</p>
+                </div>
+            `;
+        }
+    </script>
+    <footer>
+        <p>© 2024 Portfólio de Pietro de Souza Mastantuono</p>
+    </footer>
+    <script>
+        function mostrarPagina(idPagina) {
+            const paginas = document.querySelectorAll('.pagina');
+            paginas.forEach(pagina => pagina.style.display = 'none');
+            document.getElementById(idPagina).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
